@@ -46,7 +46,7 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-  primary: "#4CAF50",
+  primary: "#009688",
   secondary: "#dddddd",
   third: '#3F51B5',
   code: '#2d2d2d'
