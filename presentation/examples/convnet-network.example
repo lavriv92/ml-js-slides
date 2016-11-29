@@ -1,0 +1,13 @@
+import convnetjs from 'convnetjs';
+
+let layers = [];
+
+layers.push({ /* layer params */ });
+
+layers.push({ /* layer params */ });
+
+let net = convnetjs.Net();
+
+net.makeLayers(layers);
+
+net.forward(vol /* data need to be a volume */);

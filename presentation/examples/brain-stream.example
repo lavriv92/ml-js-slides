@@ -1,0 +1,6 @@
+let netWriteStream = net.createTrainStream({
+
+  floodCallback() { /* flood call */ },
+
+  doneTrainingCallback() { /* done */ }
+});

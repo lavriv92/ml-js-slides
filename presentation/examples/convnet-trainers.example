@@ -1,0 +1,6 @@
+let trainer = convnetjs.SDGTrainer(net, {
+  learningRate: 0.6,
+  batchSize: 50
+});
+
+trainer.run(/* result to predict */);

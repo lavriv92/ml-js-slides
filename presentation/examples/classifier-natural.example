@@ -1,0 +1,9 @@
+import natural from 'natural';
+
+classifier = new natural.BuyesClassifier();
+
+classifier.addDocument('Some text 1');
+
+classifier.train();
+
+classifier.classify('Some text 1')

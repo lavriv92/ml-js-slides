@@ -1,0 +1,5 @@
+import natural from 'natural';
+
+let inflector = new natural.CountInflector();
+
+let inflector = natural.NounInflector();

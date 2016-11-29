@@ -1,0 +1,15 @@
+// train network
+
+import ‘brain’;
+
+// create and train network
+
+export default ptNetwork.toJSON();
+
+// use network
+
+import ptNetwork from ‘./pt-network’;
+
+let network = brain.NeuralNetwork();
+
+network.fromJSON(ptNetwork);
