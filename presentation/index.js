@@ -63,56 +63,56 @@ export default class Presentation extends React.Component {
           <Slide>
             <Heading>Agenda</Heading>
             <List margin="0 auto">
-              <ListItem>Reasons</ListItem>
-              <ListItem>Simle solutuins</ListItem>
+              <ListItem>Reasoning for JS</ListItem>
+              <ListItem>Classification & Regression</ListItem>
               <ListItem>Clustering</ListItem>
-              <ListItem>Neural networks</ListItem>
+              <ListItem>Neural Networks</ListItem>
               <ListItem>Demo</ListItem>
             </List>
           </Slide>
           <Slide>
-            <Heading>Ml in another communities</Heading>
+            <Heading>ML in another communities</Heading>
           </Slide>
           <Slide>
             <List>
               <Appear>
                 <ListItem textSize="50" fit>
-                  Python and R is awesome but it’s not only for this
-                  languages.
+                  Python and R are awesome but ML is not only for these
+                  languages
                 </ListItem>
               </Appear>
               <Appear>
                 <ListItem textSize="50" fit>
-                  Java and Ruby guys are already talking about this
+                  Java and Ruby guys are already talking and using ML
                 </ListItem>
               </Appear>
             </List>
           </Slide>
           <Slide>
-            <Heading >Any other motivation?</Heading>
+            <Heading>What about JS?</Heading>
           </Slide>
           <Slide>
             <List margin="0 auto">
               <Appear>
                 <ListItem textSize="50">
-                  JS is awesome, so we can use it to match more solutions
+                  JS is awesome, but we can use ML to make more intelligent solutions
                 </ListItem>
               </Appear>
               <Appear>
                 <ListItem textSize="50">
-                  We have to stick with a new trends
+                  JS is trendy, so we have to stick with a new trends
                 </ListItem>
               </Appear>
             </List>
           </Slide>
           <Slide>
-            <Heading>How ML can help me?</Heading>
+            <Heading>ML Use Cases in a Browser</Heading>
           </Slide>
           <Slide>
             <List>
               <Appear>
                 <ListItem textSize="50">
-                  Image analysis
+                  Robot checking
                 </ListItem>
               </Appear>
               <Appear>
@@ -120,83 +120,67 @@ export default class Presentation extends React.Component {
                   Better AB tests in your application
                 </ListItem>
               </Appear>
-              <Appear>
-                <ListItem>
-                  Robot checking
-                </ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>
-                  Full text search in applications
-                </ListItem>
-              </Appear>
             </List>
           </Slide>
-          <Slide></Slide>
           <Slide>
-            <BlockQuote>
-              <Quote>Ok, I`m ready to start</Quote>
-            </BlockQuote>
-            <List>
-              <Appear>
-                <ListItem>
-                  Great!!! Now you need to learn some concepts and basic algorithms.
-                </ListItem>
-              </Appear>
-            </List>
+              <Heading>Why Use JS?</Heading>
+          </Slide>
+          // ADD SLIDE. 
+          <Slide>
+            <Heading>
+              Before We Continue...
+            </Heading>
           </Slide>
           <Slide>
             <Heading>
-              Which i need to understand?
+              ML in 2 mins :) 
             </Heading>
           </Slide>
           <Slide>
             <List>
               <Appear>
                 <ListItem>
-                  Neural networks
+                  Specified data structures & pipeline
                 </ListItem>
               </Appear>
               <Appear>
                 <ListItem>
-                  Classification algorithms
+                  Supervised Learning: regression & classification
                 </ListItem>
               </Appear>
               <Appear>
                 <ListItem>
-                  Regression
+                  Unsupervised Learning: clustering
                 </ListItem>
               </Appear>
               <Appear>
                 <ListItem>
-                  Data pipes
+                  Neural networks & Deep learning
                 </ListItem>
               </Appear>
               <Appear>
                 <ListItem>
-                  Specified data structures
+                  And much much more...
                 </ListItem>
               </Appear>
             </List>
           </Slide>
           <Slide>
-            <Heading>is It JavaScript ecosystem which helps me?</Heading>
-            <List>
-              <Appear>
-                <ListItem>
-                  Sure Ecosystem has a lot of awesome libraries which helps you.
-                </ListItem>
-              </Appear>
-            </List>
+            <Heading>ML in JavaScript Ecosystem</Heading>
           </Slide>
           <Slide>
             <Heading>
-              Short list of ml libraries
+              Short list of ML libraries
             </Heading>
             <List>
               <Appear>
                 <ListItem>
-                  ML toolkit
+                  Machine learning tools in JavaScript (mljs)
+                </ListItem>
+              </Appear>
+               <Appear>
+                <ListItem>
+                  NPM packages, e.g. classifier, natural, etc.
                 </ListItem>
               </Appear>
               <Appear>
@@ -207,16 +191,6 @@ export default class Presentation extends React.Component {
               <Appear>
                 <ListItem>
                   Brain.js
-                </ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>
-                  classifier
-                </ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>
-                  natural
                 </ListItem>
               </Appear>
             </List>
@@ -232,22 +206,11 @@ export default class Presentation extends React.Component {
               <ListItem><Link>https://github.com/karpathy/forestjs</Link></ListItem>
             </List>
           </Slide>
-          <Slide>
-            <Heading>Naive bayes example</Heading>
+          <Slide note="Switch to Atom and show example in real time">
+            <Heading>Naive Bayes Example</Heading>
           </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="js"
-              textSize="0.9em"
-              source={require("./examples/classifiers-naive.example")}
-            />
-          </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="js"
-              textSize="0.9em"
-              source={require("./examples/forest.example")}
-            />
+          <Slide note="Switch to Atom and show example in real time">
+            <Heading>Random Forest Example</Heading>
           </Slide>
           <Slide>
             <Heading>Clustering</Heading>
@@ -258,49 +221,32 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
           <Slide>
-            <Heading>Clustering example</Heading>
-          </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="js"
-              textSize="0.9em"
-              source={require("./examples/kmeans.example")}
-            />
+            <Heading>Clustering Example</Heading>
           </Slide>
           <Slide>
-            <Heading>Neural networks</Heading>
+            <Heading>Neural Networks</Heading>
             <List>
               <ListItem><Link>https://github.com/cazala/synaptic</Link></ListItem>
               <ListItem><Link>https://github.com/stevenmiller888/mind</Link></ListItem>
               <ListItem><Link>https://github.com/harthur/brain (unmaintained)</Link></ListItem>
+                      // TODO: add convnet
             </List>
           </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="js"
-              textSize="0.9em"
-              source={require("./examples/brain-network.example")}
-            />
+           <Slide>
+            <Heading>Brain.js</Heading>
+            <List>
+              <Appear>
+                <ListItem>
+                  TODO TODO TODO 
+                </ListItem>
+              </Appear>
+            </List>
           </Slide>
           <Slide>
-            <Heading>Use pre trained networks</Heading>
-          </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="js"
-              textSize="0.9em"
-              source={require("./examples/brain-use-network.example")}
-            />
+            <Heading>Brain JS Example</Heading>
           </Slide>
           <Slide>
-            <Heading>Streem network</Heading>
-          </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="js"
-              textSize="0.9em"
-              source={require("./examples/brain-stream.example")}
-            />
+            <Heading>Use Trained Networks</Heading>
           </Slide>
           <Slide>
             <Heading>ConvNetJS</Heading>
@@ -313,66 +259,26 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
           <Slide>
-            <List>
-              <Appear>
-                <ListItem>
-                  Neural networks
-                </ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>
-                  Trainers
-                </ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>
-                  Streming networks
-                </ListItem>
-              </Appear>
-            </List>
-          </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="bash"
-              textSize="1.8em"
-              source={require("./examples/convnet-install.example")}
-            />
+            <Heading>ConvNet Network Example</Heading>
           </Slide>
           <Slide>
-            <Heading>Convnet network</Heading>
-          </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="js"
-              textSize="0.9em"
-              source={require("./examples/convnet-network.example")}
-            />
-          </Slide>
-          <Slide>
-            <Heading>Trainers</Heading>
-          </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="js"
-              textSize="0.9em"
-              source={require("./examples/convnet-trainers.example")}
-            />
+            <Heading>Trainers Example</Heading>
           </Slide>
           <Slide>
             <Heading>TensorFlow</Heading>
-          </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="bash"
-              textSize="1.6em"
-              source={require("./examples/tensor-flow.example")}
-            />
+            // TODO: Add slide with packages
           </Slide>
           <Slide>
             <Heading>Demo</Heading>
           </Slide>
           <Slide>
-            <Heading>Thank you</Heading>
+            <Heading>ADD INFO ABOUT DEMO</Heading>
+          </Slide>
+          <Slide>
+            <Heading>Thank you! @.....</Heading>
+          </Slide>
+          <Slide>
+            <Heading>references</Heading>
           </Slide>
         </Deck>
       </Spectacle>
