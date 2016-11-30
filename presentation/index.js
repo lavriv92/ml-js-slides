@@ -47,9 +47,8 @@ preloader(images);
 
 const theme = createTheme({
   primary: "#009688",
-  secondary: "#dddddd",
-  third: '#3F51B5',
-  code: '#2d2d2d'
+  "secondary": "#ddd",
+  code: '#2d2d2d',
 });
 
 export default class Presentation extends React.Component {
@@ -62,54 +61,62 @@ export default class Presentation extends React.Component {
             <Link textColor="secondary">@ilavriv</Link>
           </Slide>
           <Slide>
+            <Heading>Agenda</Heading>
+            <List margin="0 auto">
+              <ListItem>Reasons</ListItem>
+              <ListItem>Simle solutuins</ListItem>
+              <ListItem>Clustering</ListItem>
+              <ListItem>Neural networks</ListItem>
+              <ListItem>Demo</ListItem>
+            </List>
+          </Slide>
+          <Slide>
             <Heading>Ml in another communities</Heading>
           </Slide>
           <Slide>
             <List>
               <Appear>
-                <ListItem>
+                <ListItem textSize="50" fit>
                   Python and R is awesome but it’s not only for this
                   languages.
                 </ListItem>
               </Appear>
               <Appear>
-                <ListItem>
+                <ListItem textSize="50" fit>
                   Java and Ruby guys are already talking about this
                 </ListItem>
               </Appear>
             </List>
           </Slide>
           <Slide>
-            <Heading>Any other motivation?</Heading>
+            <Heading >Any other motivation?</Heading>
           </Slide>
-          <Slide bgColor="third">
-            <List>
+          <Slide>
+            <List margin="0 auto">
               <Appear>
-                <ListItem>
-                JS is awesome, so we can use it to match more solutions
+                <ListItem textSize="50">
+                  JS is awesome, so we can use it to match more solutions
                 </ListItem>
               </Appear>
               <Appear>
-                <ListItem>
+                <ListItem textSize="50">
                   We have to stick with a new trends
                 </ListItem>
               </Appear>
             </List>
           </Slide>
-          <Slide bgColor="third">
-            <BlockQuote>
-              <Quote>How ML can help me?</Quote>
-            </BlockQuote>
+          <Slide>
+            <Heading>How ML can help me?</Heading>
           </Slide>
           <Slide>
             <List>
               <Appear>
-                <ListItem>
-                  Image analystic
+                <ListItem textSize="50">
+                  Image analysis
                 </ListItem>
               </Appear>
               <Appear>
-                <ListItem>
+                <ListItem textSize="50">
                   Better AB tests in your application
                 </ListItem>
               </Appear>
@@ -125,7 +132,8 @@ export default class Presentation extends React.Component {
               </Appear>
             </List>
           </Slide>
-          <Slide bgColor="third">
+          <Slide></Slide>
+          <Slide>
             <BlockQuote>
               <Quote>Ok, I`m ready to start</Quote>
             </BlockQuote>
@@ -214,154 +222,58 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
           <Slide>
-            <Heading>ML toolkit</Heading>
+            <Heading>Classification</Heading>
             <List>
-              <Appear>
-                <ListItem>
-                  Created by mljs community
-                </ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>
-                  Licence MIT
-                </ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>
-                One of the biggest implementation of machine learning tools
-                </ListItem>
-              </Appear>
+              <ListItem><Link>https://github.com/mljs/ml</Link></ListItem>
+              <ListItem><Link>https://github.com/ttezel/bayes</Link></ListItem>
+              <ListItem><Link>https://github.com/harthur/classifier</Link></ListItem>
+              <ListItem><Link>https://github.com/NaturalNode/natural</Link></ListItem>
+              <ListItem><Link>https://github.com/lagodiuk/decision-tree-js</Link></ListItem>
+              <ListItem><Link>https://github.com/karpathy/forestjs</Link></ListItem>
             </List>
+          </Slide>
+          <Slide>
+            <Heading>Naive bayes example</Heading>
           </Slide>
           <Slide bgColor="code">
             <CodePane
-              lang="bash"
-              textSize="1.8em"
-              source={require("./examples/ml-install.example")}
+              lang="js"
+              textSize="0.9em"
+              source={require("./examples/classifiers-naive.example")}
             />
-          </Slide>
-          <Slide>
-            <Heading>ML.Root</Heading>
-            <List>
-              <Appear>
-                <ListItem>Array utils</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>Bit array operations</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>hash table</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>matrix</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>Pad array</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>Regression</ListItem>
-              </Appear>
-            </List>
-          </Slide>
-          <Slide>
-            <Heading>ML.Math</Heading>
-            <List>
-              <Appear>
-                <ListItem>Distance</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>Similarity</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>Savitskiy goalay filter</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>Savitskiy goalay generation</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>Matrix</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>Spacematrix</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>Optimization</ListItem>
-              </Appear>
-            </List>
-          </Slide>
-          <Slide>
-            <Heading>ML.Stats</Heading>
-            <List>
-              <Appear>
-                <ListItem>Array</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>Matrix</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>PCA</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>Performance</ListItem>
-              </Appear>
-              <Appear>
-                <ListItem>BellOptimizer</ListItem>
-              </Appear>
-            </List>
-          </Slide>
-          <Slide>
-            <Heading>ML.RNG</Heading>
-            <List>
-              <Appear>
-                <ListItem>Xor shift add</ListItem>
-              </Appear>
-            </List>
-          </Slide>
-          <Slide>
-            <Heading>ML.SL</Heading>
-            <List>
-              <Appear>
-                <ListItem>Vector machines</ListItem>
-              </Appear>
-            </List>
-            <List>
-              <Appear>
-                <ListItem>naive buyers</ListItem>
-              </Appear>
-            </List>
-            <List>
-              <Appear>
-                <ListItem>K-nearest Neighbor</ListItem>
-              </Appear>
-            </List>
-            <List>
-              <Appear>
-                <ListItem>Partial least squares</ListItem>
-              </Appear>
-            </List>
-            <List>
-              <Appear>
-                <ListItem>Cross validation</ListItem>
-              </Appear>
-            </List>
-          </Slide>
-          <Slide>
-            <Heading>ML.NN</Heading>
-            <List>
-              <Appear>
-                <ListItem>Neural Networks</ListItem>
-              </Appear>
-            </List>
-          </Slide>
-          <Slide>
-            <Heading>Brain</Heading>
           </Slide>
           <Slide bgColor="code">
             <CodePane
-              lang="bash"
-              textSize="1.8em"
-              source={require("./examples/brain-install.example")}
+              lang="js"
+              textSize="0.9em"
+              source={require("./examples/forest.example")}
             />
+          </Slide>
+          <Slide>
+            <Heading>Clustering</Heading>
+            <List>
+              <ListItem><Link>https://github.com/mljs/kmeans</Link></ListItem>
+              <ListItem><Link>https://github.com/emilbayes/kMeans.js</Link></ListItem>
+              <ListItem><Link>https://github.com/uhho/density-clustering</Link></ListItem>
+            </List>
+          </Slide>
+          <Slide>
+            <Heading>Clustering example</Heading>
+          </Slide>
+          <Slide bgColor="code">
+            <CodePane
+              lang="js"
+              textSize="0.9em"
+              source={require("./examples/kmeans.example")}
+            />
+          </Slide>
+          <Slide>
+            <Heading>Neural networks</Heading>
+            <List>
+              <ListItem><Link>https://github.com/cazala/synaptic</Link></ListItem>
+              <ListItem><Link>https://github.com/stevenmiller888/mind</Link></ListItem>
+              <ListItem><Link>https://github.com/harthur/brain (unmaintained)</Link></ListItem>
+            </List>
           </Slide>
           <Slide bgColor="code">
             <CodePane
@@ -437,16 +349,6 @@ export default class Presentation extends React.Component {
             />
           </Slide>
           <Slide>
-            <Heading>Volumes example</Heading>
-          </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="js"
-              textSize="0.9em"
-              source={require("./examples/convnet-volume.example")}
-            />
-          </Slide>
-          <Slide>
             <Heading>Trainers</Heading>
           </Slide>
           <Slide bgColor="code">
@@ -454,43 +356,6 @@ export default class Presentation extends React.Component {
               lang="js"
               textSize="0.9em"
               source={require("./examples/convnet-trainers.example")}
-            />
-          </Slide>
-          <Slide>
-            <Heading>Classifiers</Heading>
-          </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="bash"
-              textSize="1.8em"
-              source={require("./examples/classifiers-install.example")}
-            />
-          </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="js"
-              textSize="0.9em"
-              source={require("./examples/classifier-natural.example")}
-            />
-          </Slide>
-          <Slide>
-            <Heading>Inflection</Heading>
-          </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="js"
-              textSize="0.9em"
-              source={require("./examples/classifiers-inflection.example")}
-            />
-          </Slide>
-          <Slide>
-            <Heading>Naive buyers</Heading>
-          </Slide>
-          <Slide bgColor="code">
-            <CodePane
-              lang="js"
-              textSize="0.9em"
-              source={require("./examples/classifiers-naive.example")}
             />
           </Slide>
           <Slide>
@@ -502,6 +367,12 @@ export default class Presentation extends React.Component {
               textSize="1.6em"
               source={require("./examples/tensor-flow.example")}
             />
+          </Slide>
+          <Slide>
+            <Heading>Demo</Heading>
+          </Slide>
+          <Slide>
+            <Heading>Thank you</Heading>
           </Slide>
         </Deck>
       </Spectacle>

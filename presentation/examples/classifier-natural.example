@@ -1,6 +1,6 @@
 import natural from 'natural';
 
-classifier = new natural.BuyesClassifier();
+classifier = new natural.BayesClassifier();
 
 classifier.addDocument('Some text 1');
 

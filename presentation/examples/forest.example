@@ -1,0 +1,13 @@
+import forestjs from 'forestjs';
+
+forest = new forestjs.RandomForest();
+
+forest.train(data, labels);
+
+labelProbability = forest.predictOne(
+  testInstance
+);
+
+labelProbabilities = forest.predict(
+  testData
+);
