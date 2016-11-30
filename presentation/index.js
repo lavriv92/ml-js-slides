@@ -124,8 +124,8 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide>
               <Heading>Why Use JS?</Heading>
+              <Text>ADD SLIDE. </Text>
           </Slide>
-          // ADD SLIDE. 
           <Slide>
             <Heading>
               Before We Continue...
@@ -133,7 +133,7 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide>
             <Heading>
-              ML in 2 mins :) 
+              ML in 2 mins :)
             </Heading>
           </Slide>
           <Slide>
@@ -228,8 +228,7 @@ export default class Presentation extends React.Component {
             <List>
               <ListItem><Link>https://github.com/cazala/synaptic</Link></ListItem>
               <ListItem><Link>https://github.com/stevenmiller888/mind</Link></ListItem>
-              <ListItem><Link>https://github.com/harthur/brain (unmaintained)</Link></ListItem>
-                      // TODO: add convnet
+              <ListItem><Link>https://github.com/harthur/brain (unmaintained)  // TODO: add convnet </Link></ListItem>
             </List>
           </Slide>
            <Slide>
@@ -237,7 +236,7 @@ export default class Presentation extends React.Component {
             <List>
               <Appear>
                 <ListItem>
-                  TODO TODO TODO 
+                  TODO TODO TODO
                 </ListItem>
               </Appear>
             </List>
@@ -266,7 +265,7 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide>
             <Heading>TensorFlow</Heading>
-            // TODO: Add slide with packages
+            <Text>// TODO: Add slide with packages</Text>
           </Slide>
           <Slide>
             <Heading>Demo</Heading>
