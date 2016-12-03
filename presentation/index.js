@@ -19,7 +19,11 @@ import {
   Quote,
   Slide,
   Spectacle,
-  Text
+  Text,
+  Table,
+  TableHeaderItem,
+  TableRow,
+  TableItem
 } from "spectacle";
 
 // Import image preloader util
@@ -47,7 +51,7 @@ preloader(images);
 
 const theme = createTheme({
   primary: "#009688",
-  "secondary": "#ddd",
+  secondary: "#ddd",
   code: '#2d2d2d',
 });
 
@@ -61,8 +65,8 @@ export default class Presentation extends React.Component {
             <Link textColor="secondary">@ilavriv</Link>
           </Slide>
           <Slide>
-            <Heading>Agenda</Heading>
-            <List margin="0 auto">
+            <Heading margin="0 0 50px 0">Agenda</Heading>
+            <List margin="0 0 0 200px">
               <ListItem>Reasoning for JS</ListItem>
               <ListItem>Classification & Regression</ListItem>
               <ListItem>Clustering</ListItem>
@@ -71,42 +75,46 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
           <Slide>
-            <Heading>ML in another communities</Heading>
+            <Heading fit size={6} textColor="white">ML in Another Communities</Heading>
           </Slide>
           <Slide>
-            <List>
+            <List >
               <Appear>
                 <ListItem textSize="50" fit>
-                  Python and R are awesome but ML is not only for these
-                  languages
+                  Python (ScikitLearn, TensorFlow, etc.) and R are very mature
                 </ListItem>
               </Appear>
               <Appear>
                 <ListItem textSize="50" fit>
-                  Java and Ruby guys are already talking and using ML
+                  Java (Weka, Apache Spark, H20, etc.) try to keep up
                 </ListItem>
               </Appear>
             </List>
-          </Slide>
-          <Slide>
-            <Heading>What about JS?</Heading>
           </Slide>
           <Slide>
             <List margin="0 auto">
               <Appear>
                 <ListItem textSize="50">
-                  JS is awesome, but we can use ML to make more intelligent solutions
+                  JS community can use ML to make more intelligent solutions
                 </ListItem>
               </Appear>
               <Appear>
                 <ListItem textSize="50">
-                  JS is trendy, so we have to stick with a new trends
+                  JS community can stick with a new trends
                 </ListItem>
               </Appear>
             </List>
           </Slide>
           <Slide>
-            <Heading>ML Use Cases in a Browser</Heading>
+              <Heading margin="0 0 50px 0">Why Use JS?</Heading>
+              <List margin="0 0 0 100px">
+                <ListItem>Dont want to add new technologies to JS stack</ListItem>
+                <ListItem>Dont need to learn Python, R, Java, etc.</ListItem>
+                <ListItem>Can make predictions in a browser</ListItem>
+              </List>
+          </Slide>
+          <Slide>
+            <Heading fit size={5} textColor="white">ML Use Cases for JS developers</Heading>
           </Slide>
           <Slide>
             <List>
@@ -117,23 +125,19 @@ export default class Presentation extends React.Component {
               </Appear>
               <Appear>
                 <ListItem textSize="50">
-                  Better AB tests in your application
+                  Predict user-specific UI elements
+                </ListItem>
+              </Appear>
+              <Appear>
+                <ListItem textSize="50">
+                  Extract data laws using only JavaScript
                 </ListItem>
               </Appear>
             </List>
           </Slide>
           <Slide>
-              <Heading>Why Use JS?</Heading>
-              <Text>ADD SLIDE. </Text>
-          </Slide>
-          <Slide>
             <Heading>
-              Before We Continue...
-            </Heading>
-          </Slide>
-          <Slide>
-            <Heading>
-              ML in 2 mins :)
+              ML in Few Slides :)
             </Heading>
           </Slide>
           <Slide>
@@ -166,7 +170,152 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
           <Slide>
-            <Heading>ML in JavaScript Ecosystem</Heading>
+            <Heading margin="0 0 20px 0">Classification</Heading>
+            <Image src={require('../assets/classification.jpg')} />
+          </Slide>
+          <Slide>
+            <Heading margin="0 0 50px 0">Regression</Heading>
+            <Image src={require('../assets/regression.jpg')} />
+          </Slide>
+          <Slide note="Switch to Atom and show example in real time">
+            <Heading fit size={5} textColor="white">Naive Bayes Example</Heading>
+          </Slide>
+          <Slide note="Switch to Atom and show example in real time">
+            <Heading fit size={6} textColor="white">Random Forest Example</Heading>
+          </Slide>
+          <Slide>
+            <Heading fit size={4} textColor="white" margin="0 0 50px 0">Classification libraries</Heading>
+            <Table>
+              <TableRow border="0 0 2px solid #fff">
+                <TableHeaderItem></TableHeaderItem>
+                <TableHeaderItem><Text margin="0 20px 20px 20px" textColor="white">Browser</Text></TableHeaderItem>
+                <TableHeaderItem><Text margin="0 20px 20px 20px" textColor="white">node</Text></TableHeaderItem>
+                <TableHeaderItem><Text margin="0 20px 20px 20px" textColor="white">Github link</Text></TableHeaderItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>Ml tools</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem><Link href="https://github.com/mljs/ml" textColor="white">mljs/ml</Link></TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>bayes</TableItem>
+                <TableItem>No</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem><Link href="https://github.com/ttezel/bayes" textColor="white">ttezel/bayes</Link></TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>classifier</TableItem>
+                <TableItem>No</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem><Link href="https://github.com/harthur/classifier" textColor="white">harthur/classifier</Link></TableItem>
+              </TableRow>
+            </Table>
+          </Slide>
+          <Slide>
+            <Heading fit size={4} textColor="white" margin="0 0 50px 0">Classification libraries Pt.2</Heading>
+            <Table>
+            <TableRow border="0 0 2px solid #fff">
+              <TableHeaderItem></TableHeaderItem>
+              <TableHeaderItem><Text margin="0 20px 20px 20px" textColor="white">Browser</Text></TableHeaderItem>
+              <TableHeaderItem><Text margin="0 20px 20px 20px" textColor="white">node</Text></TableHeaderItem>
+              <TableHeaderItem><Text margin="0 20px 20px 20px" textColor="white">Github link</Text></TableHeaderItem>
+            </TableRow>
+            <TableRow>
+              <TableItem>decision-tree.js</TableItem>
+              <TableItem>Yes</TableItem>
+              <TableItem>Yes</TableItem>
+              <TableItem><Link href="https://github.com/lagodiuk/decision-tree.js" textColor="white">lagodiuk/decision-tree-js</Link></TableItem>
+            </TableRow>
+            <TableRow>
+              <TableItem>forest.js</TableItem>
+              <TableItem>Yes</TableItem>
+              <TableItem>Yes</TableItem>
+              <TableItem><Link href="https://github.com/karpathy/forestjs" textColor="white">karpathy/forestjs</Link></TableItem>
+            </TableRow>
+            </Table>
+          </Slide>
+          <Slide>
+            <Heading margin="0 0 50px 0">Clusterization</Heading>
+            <Image src={require('../assets/clustering.jpg')} />
+          </Slide>
+          <Slide>
+            <Heading fit size={6} textColor="white">Clusterization Example</Heading>
+          </Slide>
+          <Slide>
+            <Heading fit size={4} textColor="white" margin="0 auto 50px auto">Clusterization libraries</Heading>
+            <Table>
+              <TableRow border="0 0 2px solid #fff">
+                <TableHeaderItem></TableHeaderItem>
+                <TableHeaderItem><Text margin="0 20px 20px 20px" textColor="white">Browser</Text></TableHeaderItem>
+                <TableHeaderItem><Text margin="0 20px 20px 20px" textColor="white">npm</Text></TableHeaderItem>
+                <TableHeaderItem><Text margin="0 20px 20px 20px" textColor="white">Github link</Text></TableHeaderItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>kmeans</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem><Link href="https://github.com/mljs/kmeans" textColor="white">mljs/kmeans</Link></TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>kMeans.js</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem><Link href="https://github.com/emilbayes/kMeans.js" textColor="white">emilbayes/kMeans.js</Link></TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>uhho/density-clustering</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem><Link href="https://github.com/uhho/density-clustering" textColor="white">uhho/density-clustering</Link></TableItem>
+              </TableRow>
+            </Table>
+          </Slide>
+          <Slide>
+            <Heading margin="0 auto 50px auto">Neural networks</Heading>
+            <Image src={require('../assets/neural_net.jpeg')} />
+          </Slide>
+          <Slide>
+            <Heading fit size={4} textColor="white">Brain JS Example</Heading>
+          </Slide>
+          <Slide>
+            <Heading fit size={6} textColor="white">Example of using a Trained Network with Brain.js</Heading>
+          </Slide>
+          <Slide>
+            <Heading fit size={4} textColor="white">ConvNet Network Example</Heading>
+          </Slide>
+          <Slide>
+            <Heading fit size={5} textColor="white" margin="0 auto 50px auto">Neural networks libraries</Heading>
+            <Table>
+              <TableRow>
+                <TableHeaderItem></TableHeaderItem>
+                <TableHeaderItem><Text margin="0 20px 0 20px" textColor="white">Browser</Text></TableHeaderItem>
+                <TableHeaderItem><Text margin="0 20px 0 20px" textColor="white">node</Text></TableHeaderItem>
+                <TableHeaderItem><Text margin="0 20px 0 20px" textColor="white">Github</Text></TableHeaderItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>Synaptic</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem>No</TableItem>
+                <TableItem><Link href="https://github.com/cazala/synaptic" textColor="white">cazala/synaptic</Link></TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>ConvNetJS</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem><Link href="https://github.com/karpathy/convnetjs" textColor="white">karpathy/convnetjs</Link></TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>Brain.js</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem>Yes</TableItem>
+                <TableItem><Link href="https://github.com/harthur/brain" textColor="white">harthur/brain</Link></TableItem>
+              </TableRow>
+            </Table>
+          </Slide>
+          <Slide>
+            <Heading>TensorFlow</Heading>
+            <Link textSize="30">https://github.com/nikhilk/node-tensorflow</Link>
           </Slide>
           <Slide>
             <Heading>
@@ -196,7 +345,17 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
           <Slide>
-            <Heading>Classification</Heading>
+            <Heading fit size={5} textColor="white">Demo: Realtime spam checker</Heading>
+          </Slide>
+          <Slide>
+            <Heading margin="0 0 50px 0">Thank you!</Heading>
+            <Text textColor="white">Twitter: @ilavriv</Text>
+            <Text textColor="white">GitHub: lavriv92</Text>
+
+            <Text textColor="white">Demo: https://github.com/lavriv92/morning-lohika-demo.git</Text>
+          </Slide>
+          <Slide>
+            <Heading size={6} textColor="white">References</Heading>
             <List>
               <ListItem><Link>https://github.com/mljs/ml</Link></ListItem>
               <ListItem><Link>https://github.com/ttezel/bayes</Link></ListItem>
@@ -204,80 +363,19 @@ export default class Presentation extends React.Component {
               <ListItem><Link>https://github.com/NaturalNode/natural</Link></ListItem>
               <ListItem><Link>https://github.com/lagodiuk/decision-tree-js</Link></ListItem>
               <ListItem><Link>https://github.com/karpathy/forestjs</Link></ListItem>
-            </List>
-          </Slide>
-          <Slide note="Switch to Atom and show example in real time">
-            <Heading>Naive Bayes Example</Heading>
-          </Slide>
-          <Slide note="Switch to Atom and show example in real time">
-            <Heading>Random Forest Example</Heading>
-          </Slide>
-          <Slide>
-            <Heading>Clustering</Heading>
-            <List>
-              <ListItem><Link>https://github.com/mljs/kmeans</Link></ListItem>
-              <ListItem><Link>https://github.com/emilbayes/kMeans.js</Link></ListItem>
               <ListItem><Link>https://github.com/uhho/density-clustering</Link></ListItem>
             </List>
           </Slide>
           <Slide>
-            <Heading>Clustering Example</Heading>
-          </Slide>
-          <Slide>
-            <Heading>Neural Networks</Heading>
+            <Heading size={6} textColor="white">References pt. 2</Heading>
             <List>
               <ListItem><Link>https://github.com/cazala/synaptic</Link></ListItem>
               <ListItem><Link>https://github.com/stevenmiller888/mind</Link></ListItem>
-              <ListItem><Link>https://github.com/harthur/brain (unmaintained)  // TODO: add convnet </Link></ListItem>
+              <ListItem><Link>https://github.com/karpathy/convnetjs</Link></ListItem>
+              <ListItem><Link>https://github.com/harthur/brain (unmaintained)</Link></ListItem>
+              <ListItem><Link>https://github.com/mljs/kmeans</Link></ListItem>
+              <ListItem><Link>https://github.com/emilbayes/kMeans.js</Link></ListItem>
             </List>
-          </Slide>
-           <Slide>
-            <Heading>Brain.js</Heading>
-            <List>
-              <Appear>
-                <ListItem>
-                  TODO TODO TODO
-                </ListItem>
-              </Appear>
-            </List>
-          </Slide>
-          <Slide>
-            <Heading>Brain JS Example</Heading>
-          </Slide>
-          <Slide>
-            <Heading>Use Trained Networks</Heading>
-          </Slide>
-          <Slide>
-            <Heading>ConvNetJS</Heading>
-            <List>
-              <Appear>
-                <ListItem>
-                  Created by Standford engineers
-                </ListItem>
-              </Appear>
-            </List>
-          </Slide>
-          <Slide>
-            <Heading>ConvNet Network Example</Heading>
-          </Slide>
-          <Slide>
-            <Heading>Trainers Example</Heading>
-          </Slide>
-          <Slide>
-            <Heading>TensorFlow</Heading>
-            <Text>// TODO: Add slide with packages</Text>
-          </Slide>
-          <Slide>
-            <Heading>Demo</Heading>
-          </Slide>
-          <Slide>
-            <Heading>ADD INFO ABOUT DEMO</Heading>
-          </Slide>
-          <Slide>
-            <Heading>Thank you! @.....</Heading>
-          </Slide>
-          <Slide>
-            <Heading>references</Heading>
           </Slide>
         </Deck>
       </Spectacle>
