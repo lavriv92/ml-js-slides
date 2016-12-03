@@ -352,7 +352,8 @@ export default class Presentation extends React.Component {
             <Text textColor="white">Twitter: @ilavriv</Text>
             <Text textColor="white">GitHub: lavriv92</Text>
 
-            <Text textColor="white">Demo: https://github.com/lavriv92/morning-lohika-demo.git</Text>
+            <Link href="https://github.com/lavriv92/morning-lohika-demo.git" textColor="white">Demo: https://github.com/lavriv92/morning-lohika-demo.git</Link>
+            <Link href="https://lavriv92.github.io/ml-js-slides/#/?_k=jqvzrj" textColor="white">Slides: https://lavriv92.github.io/ml-js-slides/#/?_k=jqvzrj</Link>
           </Slide>
           <Slide>
             <Heading size={6} textColor="white">References</Heading>
